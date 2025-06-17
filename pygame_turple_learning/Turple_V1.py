@@ -14,13 +14,26 @@ dan.penup()
 dan.setposition(-255, -255)
 color_lib.make_mod_color("#F5F0E0", 50)
 a = 10
-for i in range(17):
-    for i in range(3):
+for i in range(3):
+    for i in range(a):
+        dan.dot(20, random.choice(color_lib.mod_color))
+        dan.forward(50)
+    dan.left(90)
+a -= 1
+for i in range(5):
+    for i in range(2):
+        for i in range(a):
+            dan.dot(20, random.choice(color_lib.mod_color))
+            dan.forward(50)
+        dan.left(90)
+    a -= 1
+    for i in range(2):
         for i in range(a):
             dan.dot(20, random.choice(color_lib.mod_color))
             dan.forward(50)
         dan.left(90)
     a -= 1
 
+dan.dot(20, random.choice(color_lib.mod_color))
 
-screen.exitonclick
+screen.exitonclick()

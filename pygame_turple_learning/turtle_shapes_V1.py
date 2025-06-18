@@ -1,22 +1,24 @@
+# import
 from turtle import Turtle, Screen
 import random
 import color_lib
 
 
+# setup
 dan = Turtle()
 dan.shape("turtle")
 screen = Screen()
 screen.bgcolor("#F5F0E0")
 dan.hideturtle()
 screen.screensize(50, 50)
-
-
 turn = 360
 num_of_turn = 3
 value_of_turn = turn // num_of_turn
 distance = 50
 dan.width(5)
 
+
+# shapes
 for i in range(4):
     color_lib.make_mod_color("#F5F0E0", 50)
     dan.pencolor(random.choice(color_lib.mod_color))
@@ -27,4 +29,6 @@ for i in range(4):
     num_of_turn += 1
     value_of_turn = turn // num_of_turn
 
+
+# leaving
 screen.exitonclick()

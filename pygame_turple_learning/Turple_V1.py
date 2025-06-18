@@ -40,7 +40,6 @@ def make_spiral(size_of_dot, backround, too_close):
     dan.dot(size_of_dot, random.choice(color_lib.mod_color))
 
 
-how_big = input("how big do you want the dot to be? ")
-make_spiral(how_big, "#F5F0E0", 50)
+make_spiral(20, "#F5F0E0", 200)
 
 screen.exitonclick()

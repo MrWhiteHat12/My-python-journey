@@ -5,13 +5,13 @@ import color_lib
 
 
 # setup
+steps = input("how many steps shouldit go? ")
 dan = Turtle()
 dan.shape("turtle")
 screen = Screen()
 screen.bgcolor("#F5F0E0")
 dan.hideturtle()
 screen.screensize(50, 50)
-steps = 100
 length_of_step = 50
 turn_values = [45, 90, 170, 270, 370]
 direction = ["left", "right"]
